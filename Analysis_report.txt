@@ -1,0 +1,73 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/05 08:48:08 INFO SparkContext: Running Spark version 3.4.0
+23/05/05 08:48:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/05 08:48:08 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/05 08:48:08 INFO ResourceUtils: ==============================================================
+23/05/05 08:48:08 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/05 08:48:08 INFO ResourceUtils: ==============================================================
+23/05/05 08:48:08 INFO SparkContext: Submitted application: question1
+23/05/05 08:48:08 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/05 08:48:08 INFO ResourceProfile: Limiting resource is cpu
+23/05/05 08:48:08 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/05 08:48:08 INFO SecurityManager: Changing view acls to: acr22ar
+23/05/05 08:48:08 INFO SecurityManager: Changing modify acls to: acr22ar
+23/05/05 08:48:08 INFO SecurityManager: Changing view acls groups to: 
+23/05/05 08:48:08 INFO SecurityManager: Changing modify acls groups to: 
+23/05/05 08:48:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acr22ar; groups with view permissions: EMPTY; users with modify permissions: acr22ar; groups with modify permissions: EMPTY
+23/05/05 08:48:08 INFO Utils: Successfully started service 'sparkDriver' on port 33786.
+23/05/05 08:48:08 INFO SparkEnv: Registering MapOutputTracker
+23/05/05 08:48:08 INFO SparkEnv: Registering BlockManagerMaster
+23/05/05 08:48:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/05 08:48:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/05 08:48:08 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/05 08:48:08 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acr22ar/blockmgr-94c0d3e5-0e21-4596-bbe9-0ac8fb9d8cba
+23/05/05 08:48:08 INFO MemoryStore: MemoryStore started with capacity 8.4 GiB
+23/05/05 08:48:08 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/05 08:48:09 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+23/05/05 08:48:09 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/05/05 08:48:09 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/05/05 08:48:09 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/05/05 08:48:09 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+23/05/05 08:48:09 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+23/05/05 08:48:09 INFO Executor: Starting executor ID driver on host sharc-node174.shef.ac.uk
+23/05/05 08:48:09 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/05 08:48:09 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34069.
+23/05/05 08:48:09 INFO NettyBlockTransferService: Server created on sharc-node174.shef.ac.uk:34069
+23/05/05 08:48:09 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/05 08:48:09 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 34069, None)
+23/05/05 08:48:09 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node174.shef.ac.uk:34069 with 8.4 GiB RAM, BlockManagerId(driver, sharc-node174.shef.ac.uk, 34069, None)
+23/05/05 08:48:09 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node174.shef.ac.uk, 34069, None)
+23/05/05 08:48:09 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node174.shef.ac.uk, 34069, None)
++--------------------+---+---+--------------------+------+--------------------+---+-----+
+|                 _c0|_c1|_c2|                 _c3|   _c4|                 _c5|_c6|  _c7|
++--------------------+---+---+--------------------+------+--------------------+---+-----+
+|        199.72.81.55|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /history/apol...|200| 6245|
+|unicomp6.unicomp.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200| 3985|
+|      199.120.110.21|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/miss...|200| 4085|
+|  burger.letters.com|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|304|    0|
+|      199.120.110.21|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/miss...|200| 4179|
+|  burger.letters.com|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/NASA-...|304|    0|
+|  burger.letters.com|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200|    0|
+|     205.212.115.106|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200| 3985|
+|         d104.aa.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200| 3985|
+|      129.94.144.152|  -|  -|[01/Jul/1995:00:0...|-0400]|      GET / HTTP/1.0|200| 7074|
+|unicomp6.unicomp.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200|40310|
+|unicomp6.unicomp.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/NASA-...|200|  786|
+|unicomp6.unicomp.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/KSC-l...|200| 1204|
+|         d104.aa.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/coun...|200|40310|
+|         d104.aa.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/NASA-...|200|  786|
+|         d104.aa.net|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/KSC-l...|200| 1204|
+|      129.94.144.152|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/ksclo...|304|    0|
+|      199.120.110.21|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /images/launc...|200| 1713|
+|ppptky391.asahi-n...|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /facts/about_...|200| 3977|
+|  net-1-141.eden.com|  -|  -|[01/Jul/1995:00:0...|-0400]|GET /shuttle/miss...|200|34029|
++--------------------+---+---+--------------------+------+--------------------+---+-----+
+only showing top 20 rows
+
+There are 1138 unique hosts FROM Germany
+The most frequently visited host from Germany is DataFrame[host: string, count: bigint, Percentage: double]
+There are 2970 unique hosts FROM Canada
+The most frequently visited host from Canada is DataFrame[host: string, count: bigint, Percentage: double]
+There are 78 unique hosts FROM Singapore
+The most frequently visited host from Singapore is DataFrame[host: string, count: bigint, Percentage: double]
